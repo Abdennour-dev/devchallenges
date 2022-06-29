@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: calc(100% - 30%);
+  margin: auto;
+}
+h3 {
+  font-size: 16px;
+  font-family: "Inconsolata", monospace;
+  margin-top: 27px;
+}
+.parent-div {
+  display: flex;
+  margin-top: 120px;
+}
+.parent-div .child-img img {
+  width: 540px;
+}
+.parent-div .child-text {
+  margin-left: 218px;
+}
+.parent-div .child-text h1 {
+  font-family: "Space Mono", monospace;
+  width: 586px;
+  height: 190px;
+  font-size: 54px;
+}
+.parent-div .child-text p {
+  font-family: "Space Mono", monospace;
+  font-size: 22px;
+  width: fit-content;
+}
+.parent-div .child-text button {
+  background-color: #333;
+  padding: 15px;
+  color: #fff;
+  margin-top: 90px;
+  cursor: pointer;
+}
+.footer {
+  color: #bdbdbd;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 350px;
+}
