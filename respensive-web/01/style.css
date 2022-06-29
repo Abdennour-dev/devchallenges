@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 .container {
-  width: calc(100% - 30%);
+  width: 90%;
   margin: auto;
 }
 h3 {
@@ -17,13 +17,11 @@ h3 {
 }
 .parent-div {
   display: flex;
-  margin-top: 120px;
+  justify-content: space-between;
+  margin-top: 60px;
 }
 .parent-div .child-img img {
   width: 540px;
-}
-.parent-div .child-text {
-  margin-left: 218px;
 }
 .parent-div .child-text h1 {
   font-family: "Space Mono", monospace;
@@ -47,5 +45,5 @@ h3 {
   color: #bdbdbd;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  margin-top: 350px;
+  margin-top: 140px;
 }
