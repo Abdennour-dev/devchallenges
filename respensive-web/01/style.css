@@ -6,9 +6,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .container {
-  width: 90%;
+  width: 100%;
   margin: auto;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 h3 {
   font-size: 16px;
@@ -18,21 +21,23 @@ h3 {
 .parent-div {
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
+  align-items: center;
+  height: 70vh;
 }
 .parent-div .child-img img {
   width: 540px;
 }
+
 .parent-div .child-text h1 {
   font-family: "Space Mono", monospace;
-  width: 586px;
-  height: 190px;
-  font-size: 54px;
+  font-size: 44px;
 }
+
 .parent-div .child-text p {
   font-family: "Space Mono", monospace;
-  font-size: 22px;
+  font-size: 20px;
   width: fit-content;
+  margin-top: 35px;
 }
 .parent-div .child-text button {
   background-color: #333;
@@ -43,7 +48,44 @@ h3 {
 }
 .footer {
   color: #bdbdbd;
-  text-align: center;
   font-family: "Montserrat", sans-serif;
-  margin-top: 140px;
+  text-align: center;
+  margin-top: 120px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .parent-div {
+    flex-direction: column;
+  }
+  .parent-div .child-img img {
+    width: 500px;
+    height: 450px;
+  }
+
+  .parent-div .child-text h1 {
+    font-family: "Space Mono", monospace;
+    width: 450px;
+    height: 190px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .parent-div .child-text p {
+    font-family: "Space Mono", monospace;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 55px;
+    text-align: center;
+  }
+  .parent-div .child-text button {
+    background-color: #333;
+    padding: 15px;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 135px;
+    cursor: pointer;
+  }
+  .footer {
+    margin-top: 95%;
+    margin-bottom: 30px;
+  }
 }
